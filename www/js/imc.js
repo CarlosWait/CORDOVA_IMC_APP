@@ -8,7 +8,6 @@ var update_imc = document.getElementById('update-imc');
 
 var fullname = localStorage.getItem("name");
 var fistname = fullname.split(' ')[0];
-alert(fistname);
 title.append("Olá " +  fistname  + " IMC Atual");
 
 if (height != "" && weight != "") {
