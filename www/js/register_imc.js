@@ -31,7 +31,12 @@ var app = {
             .then(() => {
               localStorage.setItem('height', cheight);
               localStorage.setItem('weight', cweight);
-              window.location.href = cordova.file.applicationDirectory + "www/imc.html";
+
+              document.getElementById("box-loader").classList.remove("d-none")
+
+              setTimeout(function() {
+                  window.location.href = cordova.file.applicationDirectory + "www/imc.html";
+              }, 2500)
             })
             .catch((error) => {
                 console.error("Error updating document: ", error);

@@ -50,6 +50,28 @@
             </div>
         </div>
 
+        <div id="box-loader" class="d-none">
+            <svg>
+                <filter id="glowfloxs">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                    <feColorMatrix values="
+                                       1 0 0 0 0                      
+                                       0 1 0 0 0                       
+                                       0 0 1 0 0                       
+                                       0 0 0 20 -10"></feColorMatrix>
+                </filter>
+            </svg>
+            <div class="loader">
+                <span style="--i:1;"></span><span style="--i:2;"></span><span style="--i:3;"></span><span
+                    style="--i:4;"></span><span style="--i:5;"></span><span style="--i:6;"></span><span
+                    style="--i:7;"></span><span style="--i:8;"></span><span style="--i:9;"></span><span
+                    style="--i:10;"></span><span class="rotate" style="--watet:0;"></span><span class="rotate"
+                    style="--watet:2;"></span><span class="rotate" style="--watet:3;"></span><span class="rotate"
+                    style="--watet:4;"></span><span class="rotate" style="--watet:5;"></span><span class="rotate"
+                    style="--watet:6;"></span><span class="rotate" style="--watet:7;"></span>
+            </div>
+        </div>
+
         <script src="./../cordova.js"></script>
         <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
